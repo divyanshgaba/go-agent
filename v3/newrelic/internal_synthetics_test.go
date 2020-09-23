@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/newrelic/go-agent/v3/internal"
-	"github.com/newrelic/go-agent/v3/internal/cat"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal/cat"
 )
 
 // This collection of top-level tests affirms, for all possible combinations of

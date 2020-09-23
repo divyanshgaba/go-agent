@@ -32,7 +32,7 @@ type DatastoreSegment struct {
 	// used for aggregate metrics:
 	//
 	// Product is the datastore type.  See the constants in
-	// https://github.com/newrelic/go-agent/blob/master/datastore.go.  Product
+	// https://github.com/divyanshgaba/go-agent/blob/master/datastore.go.  Product
 	// is one of the fields primarily responsible for the grouping of Datastore
 	// metrics.
 	Product DatastoreProduct

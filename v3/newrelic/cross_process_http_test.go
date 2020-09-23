@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/newrelic/go-agent/v3/internal/cat"
+	"github.com/divyanshgaba/go-agent/v3/internal/cat"
 )
 
 func TestTxnCrossProcessInitFromHTTPRequest(t *testing.T) {

@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 func TestServerlessDistributedTracingConfigPresent(t *testing.T) {

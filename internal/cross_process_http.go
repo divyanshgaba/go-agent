@@ -6,7 +6,7 @@ package internal
 import (
 	"net/http"
 
-	"github.com/newrelic/go-agent/internal/cat"
+	"github.com/divyanshgaba/go-agent/internal/cat"
 )
 
 // InboundHTTPRequest adds the inbound request metadata to the TxnCrossProcess.

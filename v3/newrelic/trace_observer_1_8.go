@@ -6,7 +6,7 @@
 package newrelic
 
 import (
-	"github.com/newrelic/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal"
 )
 
 func newTraceObserver(runID internal.AgentRunID, requestHeadersMap map[string]string, cfg observerConfig) (traceObserver, error) {

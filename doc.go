@@ -5,5 +5,5 @@
 //
 // Deprecated: This package has been supplanted by version 3 here:
 //
-// https://godoc.org/github.com/newrelic/go-agent/v3/newrelic
+// https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic
 package newrelic

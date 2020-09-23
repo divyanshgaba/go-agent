@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 language: go
-go_import_path: github.com/newrelic/go-agent
+go_import_path: github.com/divyanshgaba/go-agent
 
 matrix:
   include:

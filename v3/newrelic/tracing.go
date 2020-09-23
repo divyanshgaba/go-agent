@@ -11,10 +11,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/internal"
-	"github.com/newrelic/go-agent/v3/internal/cat"
-	"github.com/newrelic/go-agent/v3/internal/jsonx"
-	"github.com/newrelic/go-agent/v3/internal/logger"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal/cat"
+	"github.com/divyanshgaba/go-agent/v3/internal/jsonx"
+	"github.com/divyanshgaba/go-agent/v3/internal/logger"
 )
 
 // txnEvent represents a transaction.
@@ -408,7 +408,7 @@ var (
 	// errSegmentOrder indicates that segments have been ended in the
 	// incorrect order.
 	errSegmentOrder = errors.New(`improper segment use: segments must be ended in "last started first ended" order: ` +
-		`use https://godoc.org/github.com/newrelic/go-agent/v3/newrelic#Transaction.NewGoroutine to use the transaction in multiple goroutines`)
+		`use https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic#Transaction.NewGoroutine to use the transaction in multiple goroutines`)
 )
 
 func endSegment(t *txnData, thread *tracingThread, start segmentStartTime, now time.Time) (segmentEnd, error) {

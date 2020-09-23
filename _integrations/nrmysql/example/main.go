@@ -10,8 +10,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/newrelic/go-agent"
-	_ "github.com/newrelic/go-agent/_integrations/nrmysql"
+	"github.com/divyanshgaba/go-agent"
+	_ "github.com/divyanshgaba/go-agent/_integrations/nrmysql"
 )
 
 func mustGetEnv(key string) string {

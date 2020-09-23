@@ -31,25 +31,25 @@
 ## Upgrading
 
 This guide documents version 3.x of the agent which resides in package
-`"github.com/newrelic/go-agent/v3/newrelic"`.
+`"github.com/divyanshgaba/go-agent/v3/newrelic"`.
 If you have already been using version 2.X of the agent and are upgrading to
 version 3.0, see our [Migration Guide](MIGRATION.md) for details.
 
 ## Installation
 
-(Also see [GETTING_STARTED](https://github.com/newrelic/go-agent/blob/master/GETTING_STARTED.md) if you are using the Go agent for the first time).
+(Also see [GETTING_STARTED](https://github.com/divyanshgaba/go-agent/blob/master/GETTING_STARTED.md) if you are using the Go agent for the first time).
 
 In order to install the New Relic Go agent, you need a New Relic license key. 
 Then, installing the Go Agent is the same as installing any other Go library.  The
 simplest way is to run:
 
 ```
-go get github.com/newrelic/go-agent
+go get github.com/divyanshgaba/go-agent
 ```
 
 Then import the package in your application:
 ```go
-import "github.com/newrelic/go-agent/v3/newrelic"
+import "github.com/divyanshgaba/go-agent/v3/newrelic"
 ```
 
 Initialize the New Relic Go agent by adding the following `Config` options and `Application` settings in the `main` function or in an `init` block:
@@ -64,7 +64,7 @@ app, err := newrelic.NewApplication(
 This will allow you to see Go runtime information.
 
 Now, add instrumentation to your Go application to get additional performance data:
-* Import any of our [integration packages](https://github.com/newrelic/go-agent#integrations) for out-of-the box support for many popular Go web 
+* Import any of our [integration packages](https://github.com/divyanshgaba/go-agent#integrations) for out-of-the box support for many popular Go web 
 frameworks and libraries. 
 * [Instrument Transactions](#transactions)
 * [Use Distributed Tracing](#distributed-tracing)
@@ -95,8 +95,8 @@ app, err := newrelic.NewApplication(
 
 ## Full list of `Config` options and `Application` settings
 
-* [Config godoc](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic#Config)
-* [Application godoc](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic#Application)
+* [Config godoc](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic#Config)
+* [Application godoc](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic#Application)
 
 
 
@@ -105,9 +105,9 @@ app, err := newrelic.NewApplication(
 The agent's logging system is designed to be easily extensible.  By default, no
 logging will occur.  To enable logging, use the following config functions
 with an [io.Writer](https://godoc.org/github.com/pkg/io/#Writer):
-[ConfigInfoLogger](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#ConfigInfoLogger),
+[ConfigInfoLogger](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#ConfigInfoLogger),
 which logs at info level, and
-[ConfigDebugLogger](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#ConfigDebugLogger)
+[ConfigDebugLogger](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#ConfigDebugLogger)
 which logs at debug level.
 
 To log at debug level to standard out, set:
@@ -137,13 +137,13 @@ if nil == err {
 Popular logging libraries `logrus`, `logxi` and `zap` are supported by
 integration packages:
 
-* [v3/integrations/nrlogrus](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrlogrus/)
-* [v3/integrations/nrlogxi](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrlogxi/)
-* [v3/integrations/nrzap](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrzap/)
+* [v3/integrations/nrlogrus](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrlogrus/)
+* [v3/integrations/nrlogxi](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrlogxi/)
+* [v3/integrations/nrzap](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrzap/)
 
 ## Transactions
 
-* [Transaction godoc](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic#Transaction)
+* [Transaction godoc](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic#Transaction)
 * [Naming Transactions](#naming-transactions-and-metrics)
 * [More info on Transactions](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page)
 
@@ -159,18 +159,18 @@ If you are instrumenting a background transaction, this is all that is needed. I
 you are instrumenting a web transaction, you will want to use the
  `SetWebRequestHTTP` and `SetWebResponse` methods as well.
 
-[SetWebRequestHTTP](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#Transaction.SetWebRequestHTTP)
+[SetWebRequestHTTP](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#Transaction.SetWebRequestHTTP)
 marks the transaction as a web transaction. If the [http.Request](https://godoc.org/net/http#Request)
 is non-nil, `SetWebRequestHTTP` will additionally collect details on request
 attributes, url, and method. If headers are present, the agent will look for a
 distributed tracing header.
 
 If you want to mark a transaction as a web transaction, but don't have access
- to an `http.Request`, you can use the [SetWebRequest](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#Transaction.SetWebRequest)
-method, using a manually constructed [WebRequest](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#WebRequest)
+ to an `http.Request`, you can use the [SetWebRequest](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#Transaction.SetWebRequest)
+method, using a manually constructed [WebRequest](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#WebRequest)
 object.
 
-[SetWebResponse](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#Transaction.SetWebResponse)
+[SetWebResponse](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#Transaction.SetWebResponse)
 allows the Transaction to instrument response code and response headers. Pass in
 your [http.ResponseWriter](https://godoc.org/net/http#ResponseWriter) as a
 parameter, and then use the return value of this method in place of the input
@@ -193,7 +193,7 @@ func (h *handler) ServeHTTP(writer http.ResponseWriter, req *http.Request) {
 ```
 
 The transaction has helpful methods like `NoticeError` and `SetName`.
-See more in [godocs](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic#Transaction).
+See more in [godocs](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic#Transaction).
 
 If you are using [`http.ServeMux`](https://golang.org/pkg/net/http/#ServeMux),
 use `WrapHandle` and `WrapHandleFunc`.  These wrappers automatically start and
@@ -290,14 +290,14 @@ Datastore segments appear in the transaction "Breakdown table" and in the
 * [More info on Databases page](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/databases-slow-queries-page)
 
 Datastore segments are instrumented using
-[DatastoreSegment](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#DatastoreSegment).
+[DatastoreSegment](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#DatastoreSegment).
 Just like basic segments, datastore segments begin when the `StartTime` field
 is populated and finish when the `End` method is called.  Here is an example:
 
 ```go
 s := newrelic.DatastoreSegment{
     // Product is the datastore type.  See the constants in
-    // https://github.com/newrelic/go-agent/blob/master/v3/newrelic/datastore.go.  Product
+    // https://github.com/divyanshgaba/go-agent/blob/master/v3/newrelic/datastore.go.  Product
     // is one of the fields primarily responsible for the grouping of Datastore
     // metrics.
     Product: newrelic.DatastoreMySQL,
@@ -336,10 +336,10 @@ If you are using the standard library's
 [SQLite](https://github.com/mattn/go-sqlite3) then you can avoid creating
 DatastoreSegments by hand by using an integration package:
 
-* [v3/integrations/nrpq](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrpq)
-* [v3/integrations/nrmysql](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrmysql)
-* [v3/integrations/nrsqlite3](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrsqlite3)
-* [v3/integrations/nrmongo](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrmongo)
+* [v3/integrations/nrpq](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrpq)
+* [v3/integrations/nrmysql](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrmysql)
+* [v3/integrations/nrsqlite3](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrsqlite3)
+* [v3/integrations/nrmongo](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrmongo)
 
 ### External Segments
 
@@ -380,7 +380,7 @@ ways to use this functionality:
 
     If the transaction is `nil` then `StartExternalSegment` will look for a
     transaction in the request's context using
-    [FromContext](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#FromContext).
+    [FromContext](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#FromContext).
 
 2. Using `NewRoundTripper` to get a
    [`http.RoundTripper`](https://golang.org/pkg/net/http/#RoundTripper) that
@@ -390,7 +390,7 @@ ways to use this functionality:
    provided the Go Agent is version 1.11.0, and in distributed tracing support,
    provided the Go Agent is version 2.1.0.  `NewRoundTripper` will look for a
    transaction in the request's context using
-   [FromContext](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#FromContext).
+   [FromContext](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#FromContext).
 
    For example:
 
@@ -428,7 +428,7 @@ ways to use this functionality:
 Message producer segments appear in the transaction "Breakdown table".
 
 Message producer segments are instrumented using
-[MessageProducerSegment](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#MessageProducerSegment).
+[MessageProducerSegment](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#MessageProducerSegment).
 Just like basic segments, message producer segments begin when the `StartTime`
 field is populated and finish when the `End` method is called.  Here is an
 example:
@@ -486,7 +486,7 @@ seg.AddAttribute("count", 14)
 Some attributes are recorded automatically.  These are called agent attributes.
 They are listed here:
 
-* [newrelic package constants](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic#pkg-constants)
+* [newrelic package constants](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic#pkg-constants)
 
 To disable one of these agents attributes, for example `AttributeHostDisplayName`,
 modify the config like this:

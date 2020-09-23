@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 func TestResponseCodeIsError(t *testing.T) {

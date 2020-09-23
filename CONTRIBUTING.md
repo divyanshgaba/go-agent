@@ -26,7 +26,7 @@ Before submitting an Issue, please search for similar ones in the
 
 Pull requests must pass all automated tests and must be reviewed by at least one maintaining engineer before being merged.
 
-When contributing a new integration package, please follow the [Writing a New Integration Package](https://github.com/newrelic/go-agent/wiki/Writing-a-New-Integration-Package) wiki page.
+When contributing a new integration package, please follow the [Writing a New Integration Package](https://github.com/divyanshgaba/go-agent/wiki/Writing-a-New-Integration-Package) wiki page.
 
 ## Contributor License Agreement
 

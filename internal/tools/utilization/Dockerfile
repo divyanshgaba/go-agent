@@ -15,8 +15,8 @@ FROM golang:1.7
 
 ENV GOPATH /tmp/gopath
 
-RUN mkdir -p $GOPATH/src/github.com/newrelic/go-agent/
+RUN mkdir -p $GOPATH/src/github.com/divyanshgaba/go-agent/
 
-COPY . $GOPATH/src/github.com/newrelic/go-agent/
+COPY . $GOPATH/src/github.com/divyanshgaba/go-agent/
 
-CMD go run ${GOPATH}/src/github.com/newrelic/go-agent/internal/tools/utilization/main.go
+CMD go run ${GOPATH}/src/github.com/divyanshgaba/go-agent/internal/tools/utilization/main.go

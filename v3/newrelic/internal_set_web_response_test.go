@@ -8,7 +8,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/newrelic/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal"
 )
 
 func TestSetWebResponseNil(t *testing.T) {

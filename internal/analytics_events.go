@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"container/heap"
 
-	"github.com/newrelic/go-agent/internal/jsonx"
+	"github.com/divyanshgaba/go-agent/internal/jsonx"
 )
 
 type analyticsEvent struct {

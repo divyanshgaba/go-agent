@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/_integrations/nrgrpc/testapp"
-	"github.com/newrelic/go-agent/internal"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/_integrations/nrgrpc/testapp"
+	"github.com/divyanshgaba/go-agent/internal"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/test/bufconn"
 )

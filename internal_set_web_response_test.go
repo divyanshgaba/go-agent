@@ -8,7 +8,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 func TestTransactionStartedWithoutResponse(t *testing.T) {

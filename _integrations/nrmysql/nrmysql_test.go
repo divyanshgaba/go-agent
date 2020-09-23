@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/go-sql-driver/mysql"
-	newrelic "github.com/newrelic/go-agent"
+	newrelic "github.com/divyanshgaba/go-agent"
 )
 
 func TestParseDSN(t *testing.T) {

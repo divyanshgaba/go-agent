@@ -9,7 +9,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 // NewContext returns a new Context that carries the provided transaction.

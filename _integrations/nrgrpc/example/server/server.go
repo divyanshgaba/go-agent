@@ -10,9 +10,9 @@ import (
 	"net"
 	"os"
 
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/_integrations/nrgrpc"
-	sampleapp "github.com/newrelic/go-agent/_integrations/nrgrpc/example/sampleapp"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/_integrations/nrgrpc"
+	sampleapp "github.com/divyanshgaba/go-agent/_integrations/nrgrpc/example/sampleapp"
 	"google.golang.org/grpc"
 )
 

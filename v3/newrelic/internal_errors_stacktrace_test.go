@@ -50,7 +50,7 @@ func TestStackTrace(t *testing.T) {
 	// First choice is any StackTrace() of the immediate error.
 	// Second choice is any StackTrace() of the error's cause.
 	// Final choice is stack trace of the current location.
-	getStackTraceFrame := "github.com/newrelic/go-agent/v3/newrelic.getStackTrace"
+	getStackTraceFrame := "github.com/divyanshgaba/go-agent/v3/newrelic.getStackTrace"
 	testcases := []struct {
 		Error          error
 		ExpectTopFrame string

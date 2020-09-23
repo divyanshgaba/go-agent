@@ -17,10 +17,10 @@ import (
 	"github.com/aws/aws-sdk-go-v2/private/protocol/rest"
 	"github.com/aws/aws-sdk-go-v2/service/dynamodb"
 	"github.com/aws/aws-sdk-go-v2/service/lambda"
-	"github.com/newrelic/go-agent/v3/internal"
-	"github.com/newrelic/go-agent/v3/internal/awssupport"
-	"github.com/newrelic/go-agent/v3/internal/integrationsupport"
-	newrelic "github.com/newrelic/go-agent/v3/newrelic"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal/awssupport"
+	"github.com/divyanshgaba/go-agent/v3/internal/integrationsupport"
+	newrelic "github.com/divyanshgaba/go-agent/v3/newrelic"
 )
 
 func testApp() integrationsupport.ExpectApp {

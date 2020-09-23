@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/aws/aws-lambda-go/events"
-	newrelic "github.com/newrelic/go-agent"
+	newrelic "github.com/divyanshgaba/go-agent"
 )
 
 func getEventSourceARN(event interface{}) string {

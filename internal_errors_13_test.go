@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 func TestNoticedWrappedError(t *testing.T) {

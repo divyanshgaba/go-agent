@@ -3,7 +3,7 @@
 
 package logcontext
 
-import newrelic "github.com/newrelic/go-agent"
+import newrelic "github.com/divyanshgaba/go-agent"
 
 // Keys used for logging context JSON.
 const (

@@ -23,7 +23,7 @@
 // Then change the side-effect import to this package, and open "nrpostgres" instead:
 //
 //	import (
-//		_ "github.com/newrelic/go-agent/_integrations/nrpq"
+//		_ "github.com/divyanshgaba/go-agent/_integrations/nrpq"
 //	)
 //
 //	func main() {
@@ -51,7 +51,7 @@
 // https://github.com/lib/pq/pull/768).
 //
 // A working example is shown here:
-// https://github.com/newrelic/go-agent/tree/master/_integrations/nrpq/example/main.go
+// https://github.com/divyanshgaba/go-agent/tree/master/_integrations/nrpq/example/main.go
 package nrpq
 
 import (
@@ -63,9 +63,9 @@ import (
 	"strings"
 
 	"github.com/lib/pq"
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/internal"
-	"github.com/newrelic/go-agent/internal/sqlparse"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal/sqlparse"
 )
 
 var (

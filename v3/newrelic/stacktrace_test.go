@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/newrelic/go-agent/v3/internal/stacktracetest"
+	"github.com/divyanshgaba/go-agent/v3/internal/stacktracetest"
 )
 
 func TestGetStackTrace(t *testing.T) {
@@ -62,27 +62,27 @@ func TestStacktraceFrames(t *testing.T) {
 	// This stacktrace taken from Go 1.13
 	inputFrames := []stacktraceFrame{
 		{
-			File: "/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/internal/stacktrace.go",
-			Name: "github.com/newrelic/go-agent/v3/internal.GetStackTrace",
+			File: "/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/internal/stacktrace.go",
+			Name: "github.com/divyanshgaba/go-agent/v3/internal.GetStackTrace",
 			Line: 18,
 		},
 		{
-			File: "/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/newrelic/internal_txn.go",
-			Name: "github.com/newrelic/go-agent/v3/newrelic.errDataFromError",
+			File: "/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/newrelic/internal_txn.go",
+			Name: "github.com/divyanshgaba/go-agent/v3/newrelic.errDataFromError",
 			Line: 533,
 		},
 		{
-			File: "/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/newrelic/internal_txn.go",
-			Name: "github.com/newrelic/go-agent/v3/newrelic.(*txn).NoticeError",
+			File: "/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/newrelic/internal_txn.go",
+			Name: "github.com/divyanshgaba/go-agent/v3/newrelic.(*txn).NoticeError",
 			Line: 575,
 		},
 		{
-			File: "/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/newrelic/transaction.go",
-			Name: "github.com/newrelic/go-agent/v3/newrelic.(*Transaction).NoticeError",
+			File: "/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/newrelic/transaction.go",
+			Name: "github.com/divyanshgaba/go-agent/v3/newrelic.(*Transaction).NoticeError",
 			Line: 90,
 		},
 		{
-			File: "/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/examples/server/main.go",
+			File: "/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/examples/server/main.go",
 			Name: "main.noticeError",
 			Line: 30,
 		},
@@ -92,8 +92,8 @@ func TestStacktraceFrames(t *testing.T) {
 			Line: 2007,
 		},
 		{
-			File: "/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/newrelic/instrumentation.go",
-			Name: "github.com/newrelic/go-agent/v3/newrelic.WrapHandle.func1",
+			File: "/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/newrelic/instrumentation.go",
+			Name: "github.com/divyanshgaba/go-agent/v3/newrelic.WrapHandle.func1",
 			Line: 41,
 		},
 		{
@@ -102,8 +102,8 @@ func TestStacktraceFrames(t *testing.T) {
 			Line: 2007,
 		},
 		{
-			File: "/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/newrelic/instrumentation.go",
-			Name: "github.com/newrelic/go-agent/v3/newrelic.WrapHandleFunc.func1",
+			File: "/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/newrelic/instrumentation.go",
+			Name: "github.com/divyanshgaba/go-agent/v3/newrelic.WrapHandleFunc.func1",
 			Line: 71,
 		},
 		{
@@ -137,7 +137,7 @@ func TestStacktraceFrames(t *testing.T) {
 	expectedJSON := `[
 		{
 			"name":"main.noticeError",
-			"filepath":"/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/examples/server/main.go",
+			"filepath":"/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/examples/server/main.go",
 			"line":30
 		},
 		{
@@ -147,7 +147,7 @@ func TestStacktraceFrames(t *testing.T) {
 		},
 		{
 			"name":"newrelic.WrapHandle.func1",
-			"filepath":"/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/newrelic/instrumentation.go",
+			"filepath":"/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/newrelic/instrumentation.go",
 			"line":41
 		},
 		{
@@ -157,7 +157,7 @@ func TestStacktraceFrames(t *testing.T) {
 		},
 		{
 			"name":"newrelic.WrapHandleFunc.func1",
-			"filepath":"/Users/will/Desktop/gopath/src/github.com/newrelic/go-agent/v3/newrelic/instrumentation.go",
+			"filepath":"/Users/will/Desktop/gopath/src/github.com/divyanshgaba/go-agent/v3/newrelic/instrumentation.go",
 			"line":71
 		},
 		{

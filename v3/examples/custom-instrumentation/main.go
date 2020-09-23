@@ -22,7 +22,7 @@ import (
 	"os/exec"
 	"time"
 
-	newrelic "github.com/newrelic/go-agent/v3/newrelic"
+	newrelic "github.com/divyanshgaba/go-agent/v3/newrelic"
 )
 
 func called(app *newrelic.Application, payload string) {

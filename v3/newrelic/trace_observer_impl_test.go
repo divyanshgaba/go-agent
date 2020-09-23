@@ -21,9 +21,9 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/test/bufconn"
 
-	"github.com/newrelic/go-agent/v3/internal"
-	v1 "github.com/newrelic/go-agent/v3/internal/com_newrelic_trace_v1"
-	"github.com/newrelic/go-agent/v3/internal/logger"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	v1 "github.com/divyanshgaba/go-agent/v3/internal/com_newrelic_trace_v1"
+	"github.com/divyanshgaba/go-agent/v3/internal/logger"
 )
 
 // This file contains helper functions for Trace Observer tests

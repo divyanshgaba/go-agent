@@ -1,10 +1,10 @@
-# _integrations/nrpq [![GoDoc](https://godoc.org/github.com/newrelic/go-agent/_integrations/nrpq?status.svg)](https://godoc.org/github.com/newrelic/go-agent/_integrations/nrpq)
+# _integrations/nrpq [![GoDoc](https://godoc.org/github.com/divyanshgaba/go-agent/_integrations/nrpq?status.svg)](https://godoc.org/github.com/divyanshgaba/go-agent/_integrations/nrpq)
 
 Package `nrpq` instruments https://github.com/lib/pq.
 
 ```go
-import "github.com/newrelic/go-agent/_integrations/nrpq"
+import "github.com/divyanshgaba/go-agent/_integrations/nrpq"
 ```
 
 For more information, see
-[godocs](https://godoc.org/github.com/newrelic/go-agent/_integrations/nrpq).
+[godocs](https://godoc.org/github.com/divyanshgaba/go-agent/_integrations/nrpq).

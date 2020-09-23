@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/micro/go-micro"
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/_integrations/nrmicro"
-	proto "github.com/newrelic/go-agent/_integrations/nrmicro/example/proto"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/_integrations/nrmicro"
+	proto "github.com/divyanshgaba/go-agent/_integrations/nrmicro/example/proto"
 )
 
 // Greeter is the server struct

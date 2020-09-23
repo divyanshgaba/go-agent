@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"reflect"
 
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/internal/integrationsupport"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/internal/integrationsupport"
 )
 
 type contextKeyType struct{}

@@ -13,9 +13,9 @@ import (
 
 	elasticsearch "github.com/elastic/go-elasticsearch/v7"
 	"github.com/elastic/go-elasticsearch/v7/esapi"
-	"github.com/newrelic/go-agent/v3/internal"
-	"github.com/newrelic/go-agent/v3/internal/integrationsupport"
-	newrelic "github.com/newrelic/go-agent/v3/newrelic"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal/integrationsupport"
+	newrelic "github.com/divyanshgaba/go-agent/v3/newrelic"
 )
 
 func TestParseRequest(t *testing.T) {

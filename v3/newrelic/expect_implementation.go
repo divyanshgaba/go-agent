@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal"
 )
 
 func validateStringField(v internal.Validator, fieldName, v1, v2 string) {

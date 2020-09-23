@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/internal"
-	newrelic "github.com/newrelic/go-agent/v3/newrelic"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	newrelic "github.com/divyanshgaba/go-agent/v3/newrelic"
 )
 
 func init() { internal.TrackUsage("integration", "b3") }
@@ -16,7 +16,7 @@ func init() { internal.TrackUsage("integration", "b3") }
 // NewRoundTripper creates an `http.RoundTripper` to instrument external
 // requests.  The RoundTripper returned creates an external segment and adds B3
 // tracing headers to each request if and only if a `newrelic.Transaction`
-// (https://godoc.org/github.com/newrelic/go-agent#Transaction) is found in the
+// (https://godoc.org/github.com/divyanshgaba/go-agent#Transaction) is found in the
 // `http.Request`'s context.  It then delegates to the original RoundTripper
 // provided (or http.DefaultTransport if none is provided).
 func NewRoundTripper(original http.RoundTripper) http.RoundTripper {

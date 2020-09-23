@@ -6,7 +6,7 @@ package utilization
 import (
 	"testing"
 
-	"github.com/newrelic/go-agent/internal/crossagent"
+	"github.com/divyanshgaba/go-agent/internal/crossagent"
 )
 
 func TestCrossAgentPCF(t *testing.T) {

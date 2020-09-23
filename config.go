@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 // Config contains Application and Transaction behavior settings.
@@ -34,7 +34,7 @@ type Config struct {
 	//
 	//	cfg.Logger = newrelic.NewDebugLogger(os.Stdout)
 	//
-	// See https://github.com/newrelic/go-agent/blob/master/GUIDE.md#logging
+	// See https://github.com/divyanshgaba/go-agent/blob/master/GUIDE.md#logging
 	// for more examples and logging integrations.
 	Logger Logger
 

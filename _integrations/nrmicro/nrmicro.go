@@ -14,9 +14,9 @@ import (
 	"github.com/micro/go-micro/metadata"
 	"github.com/micro/go-micro/registry"
 	"github.com/micro/go-micro/server"
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/internal"
-	"github.com/newrelic/go-agent/internal/integrationsupport"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal/integrationsupport"
 )
 
 type nrWrapper struct {
@@ -107,7 +107,7 @@ func (n *nrWrapper) Call(ctx context.Context, req client.Request, rsp interface{
 // segments will be created for each call to the client's `Call`, `Publish`, or
 // `Stream` methods.  The `newrelic.Transaction` must be put into the context
 // using `newrelic.NewContext`
-// (https://godoc.org/github.com/newrelic/go-agent#NewContext) when calling one
+// (https://godoc.org/github.com/divyanshgaba/go-agent#NewContext) when calling one
 // of those methods.
 func ClientWrapper() client.Wrapper {
 	return func(c client.Client) client.Client {
@@ -120,7 +120,7 @@ func ClientWrapper() client.Wrapper {
 // External segments will be created for each call to the client's `Call`
 // method.  The `newrelic.Transaction` must be put into the context using
 // `newrelic.NewContext`
-// (https://godoc.org/github.com/newrelic/go-agent#NewContext) when calling
+// (https://godoc.org/github.com/divyanshgaba/go-agent#NewContext) when calling
 // `Call`.
 func CallWrapper() client.CallWrapper {
 	return func(cf client.CallFunc) client.CallFunc {
@@ -138,13 +138,13 @@ func CallWrapper() client.CallWrapper {
 // This wrapper creates transactions for inbound calls.  The transaction is
 // added to the call context and can be accessed in your method handlers using
 // `newrelic.FromContext`
-// (https://godoc.org/github.com/newrelic/go-agent#FromContext).
+// (https://godoc.org/github.com/divyanshgaba/go-agent#FromContext).
 //
 // When an error is returned and it is of type Micro `errors.Error`
 // (https://godoc.org/github.com/micro/go-micro/errors#Error), the error that
 // is recorded is based on the HTTP response code (found in the Code field).
 // Values above 400 or below 100 that are not in the IgnoreStatusCodes
-// (https://godoc.org/github.com/newrelic/go-agent#Config) configuration list
+// (https://godoc.org/github.com/divyanshgaba/go-agent#Config) configuration list
 // are recorded as errors. A 500 response code and corresponding error is
 // recorded when the error is of any other type. A 200 response code is
 // recorded if no error is returned.
@@ -179,7 +179,7 @@ func HandlerWrapper(app newrelic.Application) server.HandlerWrapper {
 // This wrapper creates background transactions for inbound calls.  The
 // transaction is added to the subscriber context and can be accessed in your
 // subscriber handlers using `newrelic.FromContext`
-// (https://godoc.org/github.com/newrelic/go-agent#FromContext).
+// (https://godoc.org/github.com/divyanshgaba/go-agent#FromContext).
 //
 // The attribute `"message.routingKey"` is added to the transaction and will
 // appear on transaction events, transaction traces, error events, and error

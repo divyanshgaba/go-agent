@@ -6,7 +6,7 @@ package newrelic
 import (
 	"runtime"
 
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 const (

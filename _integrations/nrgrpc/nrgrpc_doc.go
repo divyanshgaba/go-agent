@@ -22,7 +22,7 @@
 // using newrelic.FromContext.
 //
 // Full server example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrgrpc/example/server/server.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrgrpc/example/server/server.go
 //
 // To instrument a gRPC client, follow these two steps:
 //
@@ -39,9 +39,9 @@
 // which contains a newrelic.Transaction.
 //
 // Full client example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrgrpc/example/client/client.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrgrpc/example/client/client.go
 package nrgrpc
 
-import "github.com/newrelic/go-agent/internal"
+import "github.com/divyanshgaba/go-agent/internal"
 
 func init() { internal.TrackUsage("integration", "framework", "grpc") }

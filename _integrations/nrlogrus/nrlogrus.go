@@ -24,8 +24,8 @@
 package nrlogrus
 
 import (
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/internal"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/internal"
 	"github.com/sirupsen/logrus"
 )
 

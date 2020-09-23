@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/internal"
-	"github.com/newrelic/go-agent/v3/internal/logger"
-	"github.com/newrelic/go-agent/v3/internal/sysinfo"
-	"github.com/newrelic/go-agent/v3/internal/utilization"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal/logger"
+	"github.com/divyanshgaba/go-agent/v3/internal/sysinfo"
+	"github.com/divyanshgaba/go-agent/v3/internal/utilization"
 )
 
 // Config contains Application and Transaction behavior settings.
@@ -33,7 +33,7 @@ type Config struct {
 
 	// Logger controls Go Agent logging.
 	//
-	// See https://github.com/newrelic/go-agent/blob/master/GUIDE.md#logging
+	// See https://github.com/divyanshgaba/go-agent/blob/master/GUIDE.md#logging
 	// for more examples and logging integrations.
 	Logger Logger
 
@@ -692,7 +692,7 @@ type config struct {
 	// than in appRun, to ensure that they are calculated during
 	// NewApplication (instead of at each connect) because some customers
 	// may unset environment variables after startup:
-	// https://github.com/newrelic/go-agent/issues/127
+	// https://github.com/divyanshgaba/go-agent/issues/127
 	metadata         map[string]string
 	hostname         string
 	traceObserverURL *observerURL

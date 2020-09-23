@@ -19,10 +19,10 @@ import (
 	"github.com/micro/go-micro/metadata"
 	rmemory "github.com/micro/go-micro/registry/memory"
 	"github.com/micro/go-micro/server"
-	newrelic "github.com/newrelic/go-agent"
-	proto "github.com/newrelic/go-agent/_integrations/nrmicro/example/proto"
-	"github.com/newrelic/go-agent/internal"
-	"github.com/newrelic/go-agent/internal/integrationsupport"
+	newrelic "github.com/divyanshgaba/go-agent"
+	proto "github.com/divyanshgaba/go-agent/_integrations/nrmicro/example/proto"
+	"github.com/divyanshgaba/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal/integrationsupport"
 )
 
 const (

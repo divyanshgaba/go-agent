@@ -21,7 +21,7 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/newrelic/go-agent"
+	"github.com/divyanshgaba/go-agent"
 )
 
 func mustGetEnv(key string) string {

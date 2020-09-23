@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	newrelic "github.com/newrelic/go-agent/v3/newrelic"
+	newrelic "github.com/divyanshgaba/go-agent/v3/newrelic"
 )
 
 // ConfigOption populates a newrelic.Config with correct default settings for a

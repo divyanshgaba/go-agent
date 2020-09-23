@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 func browserReplyFields(reply *internal.ConnectReply) {

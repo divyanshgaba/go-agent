@@ -18,7 +18,7 @@
 // supported.  However, if the field key collides with one of the keys used by
 // the New Relic Formatter, the value will be overwritten.  Reserved keys are
 // those found in the `logcontext` package
-// (https://godoc.org/github.com/newrelic/go-agent/_integrations/logcontext/#pkg-constants).
+// (https://godoc.org/github.com/divyanshgaba/go-agent/_integrations/logcontext/#pkg-constants).
 //
 // Supported types for `logger.WithField` and `logger.WithFields` field values
 // are numbers, booleans, strings, and errors.  Func types are dropped and all
@@ -71,10 +71,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/_integrations/logcontext"
-	"github.com/newrelic/go-agent/internal"
-	"github.com/newrelic/go-agent/internal/jsonx"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/_integrations/logcontext"
+	"github.com/divyanshgaba/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal/jsonx"
 	"github.com/sirupsen/logrus"
 )
 

@@ -11,7 +11,7 @@
 // Monitoring AWS Lambda requires several steps shown here:
 // https://docs.newrelic.com/docs/serverless-function-monitoring/aws-lambda-monitoring/get-started/enable-new-relic-monitoring-aws-lambda
 //
-// Example: https://github.com/newrelic/go-agent/tree/master/_integrations/nrlambda/example/main.go
+// Example: https://github.com/divyanshgaba/go-agent/tree/master/_integrations/nrlambda/example/main.go
 package nrlambda
 
 import (
@@ -24,9 +24,9 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/aws/aws-lambda-go/lambda/handlertrace"
 	"github.com/aws/aws-lambda-go/lambdacontext"
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/internal"
-	"github.com/newrelic/go-agent/internal/integrationsupport"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal/integrationsupport"
 )
 
 type response struct {

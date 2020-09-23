@@ -5,8 +5,8 @@
 //
 // Additional documention available here:
 //
-// https://github.com/newrelic/go-agent/blob/master/GETTING_STARTED.md
+// https://github.com/divyanshgaba/go-agent/blob/master/GETTING_STARTED.md
 //
-// https://github.com/newrelic/go-agent/blob/master/GUIDE.md
+// https://github.com/divyanshgaba/go-agent/blob/master/GUIDE.md
 //
 package newrelic

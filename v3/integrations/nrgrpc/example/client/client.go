@@ -10,9 +10,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/integrations/nrgrpc"
-	sampleapp "github.com/newrelic/go-agent/v3/integrations/nrgrpc/example/sampleapp"
-	newrelic "github.com/newrelic/go-agent/v3/newrelic"
+	"github.com/divyanshgaba/go-agent/v3/integrations/nrgrpc"
+	sampleapp "github.com/divyanshgaba/go-agent/v3/integrations/nrgrpc/example/sampleapp"
+	newrelic "github.com/divyanshgaba/go-agent/v3/newrelic"
 	"google.golang.org/grpc"
 )
 

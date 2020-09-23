@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/newrelic/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal"
 )
 
 func myErrorHandler(w http.ResponseWriter, req *http.Request) {

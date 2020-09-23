@@ -26,7 +26,7 @@
 // NATS Streaming publishers
 //
 // You can use `nrnats.StartPublishSegment` from the `nrnats` package
-// (https://godoc.org/github.com/newrelic/go-agent/_integrations/nrnats/#StartPublishSegment)
+// (https://godoc.org/github.com/divyanshgaba/go-agent/_integrations/nrnats/#StartPublishSegment)
 // to start an external segment when doing a streaming publish, which must be ended after publishing is complete.
 // Example:
 //
@@ -40,9 +40,9 @@
 //	seg.End()
 //
 // Full Publisher/Subscriber example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrstan/examples/main.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrstan/examples/main.go
 package nrstan
 
-import "github.com/newrelic/go-agent/internal"
+import "github.com/divyanshgaba/go-agent/internal"
 
 func init() { internal.TrackUsage("integration", "framework", "stan") }

@@ -7,15 +7,15 @@
 // mux.Router.  Call nrgorilla.InstrumentRoutes on your gorilla mux.Router
 // after your routes have been added to it.
 //
-// Example: https://github.com/newrelic/go-agent/tree/master/_integrations/nrgorilla/v1/example/main.go
+// Example: https://github.com/divyanshgaba/go-agent/tree/master/_integrations/nrgorilla/v1/example/main.go
 package nrgorilla
 
 import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/internal"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/internal"
 )
 
 func init() { internal.TrackUsage("integration", "framework", "gorilla", "v1") }

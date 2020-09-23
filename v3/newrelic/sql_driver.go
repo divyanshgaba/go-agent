@@ -14,7 +14,7 @@ import (
 // SQLDriverSegmentBuilder populates DatastoreSegments for sql.Driver
 // instrumentation.  Use this to instrument a database that is not supported by
 // an existing integration package (nrmysql, nrpq, and nrsqlite3). See
-// https://github.com/newrelic/go-agent/blob/master/v3/integrations/nrmysql/nrmysql.go
+// https://github.com/divyanshgaba/go-agent/blob/master/v3/integrations/nrmysql/nrmysql.go
 // for example use.
 type SQLDriverSegmentBuilder struct {
 	BaseSegment DatastoreSegment
@@ -26,7 +26,7 @@ type SQLDriverSegmentBuilder struct {
 // and query calls made with a transaction-containing context.  Use this to
 // instrument a database driver that is not supported by an existing integration
 // package (nrmysql, nrpq, and nrsqlite3). See
-// https://github.com/newrelic/go-agent/blob/master/v3/integrations/nrmysql/nrmysql.go
+// https://github.com/divyanshgaba/go-agent/blob/master/v3/integrations/nrmysql/nrmysql.go
 // for example use.
 func InstrumentSQLDriver(d driver.Driver, bld SQLDriverSegmentBuilder) driver.Driver {
 	return optionalMethodsDriver(&wrapDriver{bld: bld, original: d})
@@ -36,7 +36,7 @@ func InstrumentSQLDriver(d driver.Driver, bld SQLDriverSegmentBuilder) driver.Dr
 // exec and query calls made with a transaction-containing context.  Use this to
 // instrument a database connector that is not supported by an existing
 // integration package (nrmysql, nrpq, and nrsqlite3). See
-// https://github.com/newrelic/go-agent/blob/master/v3/integrations/nrmysql/nrmysql.go
+// https://github.com/divyanshgaba/go-agent/blob/master/v3/integrations/nrmysql/nrmysql.go
 // for example use.
 func InstrumentSQLConnector(connector driver.Connector, bld SQLDriverSegmentBuilder) driver.Connector {
 	return &wrapConnector{original: connector, bld: bld}

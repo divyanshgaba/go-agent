@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/internal"
-	"github.com/newrelic/go-agent/v3/internal/integrationsupport"
-	"github.com/newrelic/go-agent/v3/internal/sysinfo"
-	newrelic "github.com/newrelic/go-agent/v3/newrelic"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal/integrationsupport"
+	"github.com/divyanshgaba/go-agent/v3/internal/sysinfo"
+	newrelic "github.com/divyanshgaba/go-agent/v3/newrelic"
 	"github.com/sirupsen/logrus"
 )
 

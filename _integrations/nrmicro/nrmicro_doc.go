@@ -37,19 +37,19 @@
 // This wrapper creates transactions for inbound calls.  The transaction is
 // added to the call context and can be accessed in your method handlers using
 // `newrelic.FromContext`
-// (https://godoc.org/github.com/newrelic/go-agent#FromContext).
+// (https://godoc.org/github.com/divyanshgaba/go-agent#FromContext).
 //
 // When an error is returned and it is of type Micro `errors.Error`
 // (https://godoc.org/github.com/micro/go-micro/errors#Error), the error that
 // is recorded is based on the HTTP response code (found in the Code field).
 // Values above 400 or below 100 that are not in the IgnoreStatusCodes
-// (https://godoc.org/github.com/newrelic/go-agent#Config) configuration list
+// (https://godoc.org/github.com/divyanshgaba/go-agent#Config) configuration list
 // are recorded as errors. A 500 response code and corresponding error is
 // recorded when the error is of any other type. A 200 response code is
 // recorded if no error is returned.
 //
 // Full server example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrmicro/example/server/server.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrmicro/example/server/server.go
 //
 // Micro Clients
 //
@@ -118,7 +118,7 @@
 //	cli = nrmicro.ClientWrapper()(cli)
 //
 // Full client example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrmicro/example/client/client.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrmicro/example/client/client.go
 //
 // Micro Producers
 //
@@ -139,7 +139,7 @@
 //	err := cli.Publish(ctx, msg)
 //
 // Full Publisher/Subscriber example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrmicro/example/pubsub/main.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrmicro/example/pubsub/main.go
 //
 // Micro Subscribers
 //
@@ -176,9 +176,9 @@
 // If a Subscriber returns an error, it will be recorded and reported.
 //
 // Full Publisher/Subscriber example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrmicro/example/pubsub/main.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrmicro/example/pubsub/main.go
 package nrmicro
 
-import "github.com/newrelic/go-agent/internal"
+import "github.com/divyanshgaba/go-agent/internal"
 
 func init() { internal.TrackUsage("integration", "framework", "micro") }

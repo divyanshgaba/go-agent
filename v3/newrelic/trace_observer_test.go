@@ -17,9 +17,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/newrelic/go-agent/v3/internal"
-	v1 "github.com/newrelic/go-agent/v3/internal/com_newrelic_trace_v1"
-	"github.com/newrelic/go-agent/v3/internal/logger"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	v1 "github.com/divyanshgaba/go-agent/v3/internal/com_newrelic_trace_v1"
+	"github.com/divyanshgaba/go-agent/v3/internal/logger"
 )
 
 func TestValidateTraceObserverURL(t *testing.T) {

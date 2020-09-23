@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strings"
 
-	newrelic "github.com/newrelic/go-agent"
+	newrelic "github.com/divyanshgaba/go-agent"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )
@@ -73,7 +73,7 @@ func startClientSegment(ctx context.Context, method, target string) (*newrelic.E
 // which contains a newrelic.Transaction.
 //
 // Full example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrgrpc/example/client/client.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrgrpc/example/client/client.go
 //
 // This interceptor only instruments unary calls.  You must use both
 // UnaryClientInterceptor and StreamClientInterceptor to instrument unary and
@@ -115,7 +115,7 @@ func (s wrappedClientStream) RecvMsg(m interface{}) error {
 // which contains a newrelic.Transaction.
 //
 // Full example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrgrpc/example/client/client.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrgrpc/example/client/client.go
 //
 // This interceptor only instruments streaming calls.  You must use both
 // UnaryClientInterceptor and StreamClientInterceptor to instrument unary and

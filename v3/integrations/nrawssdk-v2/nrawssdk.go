@@ -6,8 +6,8 @@ package nrawssdk
 
 import (
 	"github.com/aws/aws-sdk-go-v2/aws"
-	"github.com/newrelic/go-agent/v3/internal"
-	"github.com/newrelic/go-agent/v3/internal/awssupport"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal/awssupport"
 )
 
 func init() { internal.TrackUsage("integration", "library", "aws-sdk-go-v2") }

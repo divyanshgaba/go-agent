@@ -6,7 +6,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/newrelic/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal"
 	"os"
 )
 

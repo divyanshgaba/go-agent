@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/newrelic/go-agent/internal/crossagent"
+	"github.com/divyanshgaba/go-agent/internal/crossagent"
 )
 
 func TestCrossAgentAzure(t *testing.T) {

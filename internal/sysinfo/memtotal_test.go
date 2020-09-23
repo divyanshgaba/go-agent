@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/newrelic/go-agent/internal/crossagent"
+	"github.com/divyanshgaba/go-agent/internal/crossagent"
 )
 
 func TestMemTotal(t *testing.T) {

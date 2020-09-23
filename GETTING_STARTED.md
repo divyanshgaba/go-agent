@@ -10,21 +10,21 @@ libraries - see [go.mod](v3/go.mod). Install the Go agent the same way you
 would install any other Go library. The simplest way is to run:
 
 ```
-go get github.com/newrelic/go-agent
+go get github.com/divyanshgaba/go-agent
 ```
 
 Then import the package in your application:
 ```go
-import "github.com/newrelic/go-agent/v3/newrelic"
+import "github.com/divyanshgaba/go-agent/v3/newrelic"
 ```
 
 ## Step 1: Create an Application
 
 In your `main` function, or an `init` block, create an
-[Application](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#Application) using
- [ConfigOptions](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#ConfigOption).
- Available configurations are listed [here](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#Config).
-[Application](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#Application) is the
+[Application](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#Application) using
+ [ConfigOptions](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#ConfigOption).
+ Available configurations are listed [here](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#Config).
+[Application](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#Application) is the
 starting point for all instrumentation.
 
 ```go
@@ -58,7 +58,7 @@ page that shows goroutine counts, garbage collection, memory, and CPU usage.
 
 ## Step 2: Instrument Requests Using Transactions
 
-[Transactions](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#Transaction) are
+[Transactions](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#Transaction) are
 used to time inbound requests and background tasks.  Use them to see your
 application's throughput and response time.  The instrumentation strategy
 depends on the framework you're using:
@@ -66,8 +66,8 @@ depends on the framework you're using:
 #### Standard HTTP Library
 
 If you are using the standard library `http` package, use
-[WrapHandle](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#WrapHandle) and
-[WrapHandleFunc](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#WrapHandleFunc).
+[WrapHandle](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#WrapHandle) and
+[WrapHandleFunc](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#WrapHandleFunc).
 As an example, the following code:
 
 ```go
@@ -113,23 +113,23 @@ grouped usefully.  Don't use dynamic URLs!
 
 Segments show you where the time in your transactions is being spent.  There are
 four types of segments:
-[Segment](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#Segment),
-[ExternalSegment](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#ExternalSegment),
-[DatastoreSegment](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#DatastoreSegment),
+[Segment](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#Segment),
+[ExternalSegment](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#ExternalSegment),
+[DatastoreSegment](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#DatastoreSegment),
 and
-[MessageProducerSegment](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#MessageProducerSegment).
+[MessageProducerSegment](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#MessageProducerSegment).
 
 Creating a segment requires access to the transaction.  You can pass the
 transaction around your functions inside
 a [context.Context](https://golang.org/pkg/context/#Context) (preferred), or as an explicit transaction
 parameter of the function.  Functions
-[FromContext](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#FromContext)
-and [NewContext](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#NewContext) make it
+[FromContext](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#FromContext)
+and [NewContext](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#NewContext) make it
 easy to store and retrieve the transaction from a context.
 
 You may not even need to add the transaction to the context:
-[WrapHandle](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#WrapHandle) and
-[WrapHandleFunc](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic/#WrapHandleFunc)
+[WrapHandle](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#WrapHandle) and
+[WrapHandleFunc](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic/#WrapHandleFunc)
 add the transaction to the request's context automatically.
 
 ```go
@@ -158,5 +158,5 @@ func main() {
 ## Extra Credit
 
 Read our [GUIDE.md](GUIDE.md) and the
-[godocs](https://godoc.org/github.com/newrelic/go-agent/v3/newrelic) to learn more about
+[godocs](https://godoc.org/github.com/divyanshgaba/go-agent/v3/newrelic) to learn more about
 what else you can do with the Go Agent.

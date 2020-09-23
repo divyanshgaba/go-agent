@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/newrelic/go-agent/internal/cat"
+	"github.com/divyanshgaba/go-agent/internal/cat"
 )
 
 func testTxnEventJSON(t testing.TB, e *TxnEvent, expect string) {

@@ -1,10 +1,10 @@
-# v3/integrations/nrb3 [![GoDoc](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrb3?status.svg)](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrb3)
+# v3/integrations/nrb3 [![GoDoc](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrb3?status.svg)](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrb3)
 
 Package `nrb3` supports adding B3 headers to outgoing requests.
 
 ```go
-import "github.com/newrelic/go-agent/v3/integrations/nrb3"
+import "github.com/divyanshgaba/go-agent/v3/integrations/nrb3"
 ```
 
 For more information, see
-[godocs](https://godoc.org/github.com/newrelic/go-agent/v3/integrations/nrb3).
+[godocs](https://godoc.org/github.com/divyanshgaba/go-agent/v3/integrations/nrb3).

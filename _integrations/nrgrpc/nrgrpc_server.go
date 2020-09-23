@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strings"
 
-	newrelic "github.com/newrelic/go-agent"
+	newrelic "github.com/divyanshgaba/go-agent"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
@@ -58,7 +58,7 @@ func startTransaction(ctx context.Context, app newrelic.Application, fullMethod 
 // accessed in your method handlers using newrelic.FromContext.
 //
 // Full example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrgrpc/example/server/server.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrgrpc/example/server/server.go
 //
 func UnaryServerInterceptor(app newrelic.Application) grpc.UnaryServerInterceptor {
 	if nil == app {
@@ -116,7 +116,7 @@ func newWrappedServerStream(stream grpc.ServerStream, txn newrelic.Transaction) 
 // accessed in your method handlers using newrelic.FromContext.
 //
 // Full example:
-// https://github.com/newrelic/go-agent/blob/master/_integrations/nrgrpc/example/server/server.go
+// https://github.com/divyanshgaba/go-agent/blob/master/_integrations/nrgrpc/example/server/server.go
 //
 func StreamServerInterceptor(app newrelic.Application) grpc.StreamServerInterceptor {
 	if nil == app {

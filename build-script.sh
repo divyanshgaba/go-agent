@@ -24,7 +24,7 @@ for dir in $DIRS; do
   cd "$pwd/$dir"
 
   if [ -f "go.mod" ]; then
-    go mod edit -replace github.com/newrelic/go-agent/v3=$pwd/v3
+    go mod edit -replace github.com/divyanshgaba/go-agent/v3=$pwd/v3
   fi
 
   # go get is necessary for testing v2 integrations since they do not have

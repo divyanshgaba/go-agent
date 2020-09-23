@@ -9,8 +9,8 @@ import (
 	"os"
 
 	"github.com/julienschmidt/httprouter"
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/_integrations/nrhttprouter"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/_integrations/nrhttprouter"
 )
 
 func index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {

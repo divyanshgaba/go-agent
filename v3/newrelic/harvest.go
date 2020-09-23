@@ -6,7 +6,7 @@ package newrelic
 import (
 	"time"
 
-	"github.com/newrelic/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal"
 )
 
 // harvestable is something that can be merged into a harvest.

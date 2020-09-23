@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal"
 )
 
 type appData struct {

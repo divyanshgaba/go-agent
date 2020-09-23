@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/internal"
-	"github.com/newrelic/go-agent/v3/internal/cat"
-	"github.com/newrelic/go-agent/v3/internal/crossagent"
-	"github.com/newrelic/go-agent/v3/internal/logger"
+	"github.com/divyanshgaba/go-agent/v3/internal"
+	"github.com/divyanshgaba/go-agent/v3/internal/cat"
+	"github.com/divyanshgaba/go-agent/v3/internal/crossagent"
+	"github.com/divyanshgaba/go-agent/v3/internal/logger"
 )
 
 func trueFunc() bool  { return true }

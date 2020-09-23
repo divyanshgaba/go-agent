@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	newrelic "github.com/newrelic/go-agent"
-	"github.com/newrelic/go-agent/internal"
-	"github.com/newrelic/go-agent/internal/integrationsupport"
-	"github.com/newrelic/go-agent/internal/sysinfo"
+	newrelic "github.com/divyanshgaba/go-agent"
+	"github.com/divyanshgaba/go-agent/internal"
+	"github.com/divyanshgaba/go-agent/internal/integrationsupport"
+	"github.com/divyanshgaba/go-agent/internal/sysinfo"
 	"github.com/sirupsen/logrus"
 )
 
@@ -114,7 +114,7 @@ func TestLogNoContext(t *testing.T) {
 		"line.number": matchAnything,
 		"log.level":   "info",
 		"message":     "Hello World!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogNoContext",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogNoContext",
 		"timestamp":   float64(1417136460000),
 	})
 }
@@ -128,7 +128,7 @@ func TestLogNoTxn(t *testing.T) {
 		"line.number": matchAnything,
 		"log.level":   "info",
 		"message":     "Hello World!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogNoTxn",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogNoTxn",
 		"timestamp":   float64(1417136460000),
 	})
 }
@@ -149,7 +149,7 @@ func TestLogDistributedTracingDisabled(t *testing.T) {
 		"line.number": matchAnything,
 		"log.level":   "info",
 		"message":     "Hello World!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogDistributedTracingDisabled",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogDistributedTracingDisabled",
 		"timestamp":   float64(1417136460000),
 	})
 }
@@ -178,7 +178,7 @@ func TestLogSampledFalse(t *testing.T) {
 		"line.number": matchAnything,
 		"log.level":   "info",
 		"message":     "Hello World!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogSampledFalse",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogSampledFalse",
 		"timestamp":   float64(1417136460000),
 		"trace.id":    "d9466896a525ccbf",
 	})
@@ -208,7 +208,7 @@ func TestLogSampledTrue(t *testing.T) {
 		"line.number": matchAnything,
 		"log.level":   "info",
 		"message":     "Hello World!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogSampledTrue",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestLogSampledTrue",
 		"span.id":     "bcfb32e050b264b8",
 		"timestamp":   float64(1417136460000),
 		"trace.id":    "d9466896a525ccbf",
@@ -242,7 +242,7 @@ func TestEntryUsedTwice(t *testing.T) {
 		"line.number": matchAnything,
 		"log.level":   "info",
 		"message":     "Hello World!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestEntryUsedTwice",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestEntryUsedTwice",
 		"span.id":     "bcfb32e050b264b8",
 		"timestamp":   float64(1417136460000),
 		"trace.id":    "d9466896a525ccbf",
@@ -266,7 +266,7 @@ func TestEntryUsedTwice(t *testing.T) {
 		"line.number": matchAnything,
 		"log.level":   "info",
 		"message":     "Hello World! Again!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestEntryUsedTwice",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestEntryUsedTwice",
 		"timestamp":   float64(1417136460000),
 	})
 }
@@ -289,7 +289,7 @@ func TestEntryError(t *testing.T) {
 		// Since the err field on the Entry is private we cannot record it.
 		//"logrus_error": `can not add field "func"`,
 		"message":     "Hello World!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestEntryError",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestEntryError",
 		"timestamp":   float64(1417136460000),
 	})
 }
@@ -310,7 +310,7 @@ func TestWithCustomField(t *testing.T) {
 		"line.number": matchAnything,
 		"log.level":   "info",
 		"message":     "Hello World!",
-		"method.name": "github.com/newrelic/go-agent/_integrations/logcontext/nrlogrusplugin.TestWithCustomField",
+		"method.name": "github.com/divyanshgaba/go-agent/_integrations/logcontext/nrlogrusplugin.TestWithCustomField",
 		"timestamp":   float64(1417136460000),
 		"zip":         "zap",
 	})
